@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://myg5x8httcja"]
+[gd_scene load_steps=4 format=3 uid="uid://myg5x8httcja"]
 
 [ext_resource type="Texture2D" uid="uid://cu210bs5r11ja" path="res://sprites/testBG.png" id="1_f82ol"]
 [ext_resource type="Script" path="res://scenes/grid_drawing.gd" id="2_ypc81"]
+[ext_resource type="Texture2D" uid="uid://8wtasgkdw4xk" path="res://sprites/Items/vrata_1.png" id="3_xj5n6"]
 
 [node name="World" type="Node2D"]
 
@@ -16,3 +17,9 @@ texture = ExtResource("1_f82ol")
 position = Vector2(0, 1.49012e-08)
 scale = Vector2(1, 1)
 script = ExtResource("2_ypc81")
+
+[node name="Vrata1" type="Sprite2D" parent="Grid"]
+texture_repeat = 1
+position = Vector2(104, 98)
+scale = Vector2(0.16, 0.16)
+texture = ExtResource("3_xj5n6")
