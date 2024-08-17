@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://myg5x8httcja"]
+
+[ext_resource type="Texture2D" uid="uid://cu210bs5r11ja" path="res://sprites/testBG.png" id="1_f82ol"]
+[ext_resource type="Script" path="res://scenes/grid_drawing.gd" id="2_ypc81"]
+
+[node name="World" type="Node2D"]
+
+[node name="Camera" type="Camera2D" parent="."]
+
+[node name="TestBg" type="Sprite2D" parent="."]
+position = Vector2(-2.14032, 0.25)
+scale = Vector2(0.838064, 0.838064)
+texture = ExtResource("1_f82ol")
+
+[node name="Grid" type="Node2D" parent="."]
+position = Vector2(0, 1.49012e-08)
+scale = Vector2(1, 1)
+script = ExtResource("2_ypc81")
